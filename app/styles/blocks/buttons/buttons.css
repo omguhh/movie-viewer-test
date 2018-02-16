@@ -1,0 +1,22 @@
+.button {
+    border: none;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 35px;
+    padding: 15px 20px;
+    background: #3686ff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .15s ease;
+}
+
+.button--trailer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    right: 20px;
+}

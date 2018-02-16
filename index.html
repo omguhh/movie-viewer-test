@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ViewTube</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="app/styles/main.css">
+</head>
+<body>
+
+<div class="container">
+    <main class="navbar__wrapper">
+        <nav class="navbar__item"> <a href="#"> Featured </a> </nav>
+        <nav class="navbar__item"> <a href="#"> Discover  </a> </nav>
+        <nav class="navbar__item"> <a href="#"> New Releases </a> </nav>
+        <nav class="navbar__item"> <a href="#"> Watch List  </a> </nav>
+    </main>
+    <!-- Movie details section -->
+    <section class="movie-details__wrapper">
+        <div class="movie-details__select">
+            <ul>
+                <li> Startrek: Beyond </li>
+                <li> Wreck-It Ralph </li>
+                <li> The Secret Life of Pets </li>
+                <li> Monsters,Inc </li>
+                <li> Blade Runner </li>
+            </ul>
+        </div>
+        <div class="movie-details__poster-section">
+            <div class="movie-details__release-date">
+                <p>30 </p> <p> NOV 2017 </p>
+            </div>
+            <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjIzMzA1OTkzNV5BMl5BanBnXkFtZTgwODE3MjM4NzE@._V1_SX400.jpg">
+            <button class="button button--trailer"> <i class="fas fa-play"></i></button>
+        </div>
+        <div class="movie-details__description">
+            <div class="movie-details__title">
+                <h1>The Secret Life of Pets</h1>
+                <!--<i class="fas fa-ellipsis-v movie-details__share"></i>-->
+                <ul class="dropdown__wrapper">
+                    <li>
+                        <i class="fas fa-ellipsis-v movie-details__share"></i>
+                        <ul class="dropdown__items">
+                            <li class="dropdown__item"> <i class="fas fa-share-alt"></i> Share With Friends </li>
+                            <li class="dropdown__item"> <i class="fas fa-comments"></i> Send Feedback </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <small> Animation, Adventure, Comedy/ 2016 / 1h59m </small>
+            <div class="ratings__wrapper">
+                <i class="fas fa-star ratings__star"></i>
+                <i class="fas fa-star ratings__star"></i>
+                <i class="fas fa-star ratings__star"></i>
+                <i class="fas fa-star ratings__star"></i>
+                <i class="far fa-star ratings__star"></i>
+                <small class="ratings__number">8.0</small>
+            </div>
+            <div class="movie-details__cast">
+                <h3>The Cast</h3>
+                <div class="movie-details__cast-items">
+                    <ul class="cast-list__wrapper">
+                        <li class="cast-list__item"> <img class="cast-list__image" src="app/images/ellie.jpg"></li>
+                        <li class="cast-list__item"> <img class="cast-list__image" src="app/images/eric.jpg"></li>
+                        <li class="cast-list__item"> <img class="cast-list__image" src="app/images/jenny.jpg"></li>
+                        <li class="cast-list__item"> <img class="cast-list__image" src="app/images/kevin-hart.jpg"></li>
+                        <li class="cast-list__item"> <img class="cast-list__image" src="app/images/louis.jpg"></li>
+                        <li class="cast-list__item cast-list__item--more"> <a href="#"> +28 </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="movie-details__synopsis">
+                <h3>Synopsis</h3>
+                <p> Taking place in a Manhattan apartment building, Max's life as a favorite pet is turned upside down, when his owner brings home a sloppy mongrel named Duke. They have to put their quarrels behind when they find out that an adorable white bunny named Snowball is building an army of lost pets determined to take revenge.</p>
+            </div>
+            <div class="movie-details__stills">
+                <h3>Movie Stills</h3>
+                <div class="slider" data-items="3">
+                    <img src="./app/images/easter_th-600x337.jpg" class="slider__item">
+                    <img src="./app/images/the-secret-life-of-pets.jpg" class="slider__item">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Movie selection section -->
+
+</body>
+</html>

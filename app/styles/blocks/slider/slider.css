@@ -1,0 +1,10 @@
+.slider {
+    margin-top: 1.2rem;
+}
+.slider__item {
+    width: 270px;
+    padding: 0 10px;
+}
+.slider__item:first-child {
+    padding-left: 0;
+}

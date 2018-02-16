@@ -1,0 +1,64 @@
+.movie-details__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: stretch;
+    padding: 20px 0;
+}
+
+.movie-details__poster-section {
+    width: 32%;
+}
+
+.movie-details__poster-section, .movie-details__description ,.movie-details__select {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    position: relative;
+}
+
+.movie-details__cast {
+
+}
+
+.movie-details__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie-details__share {
+    color: #3686ff;
+}
+
+.movie-details__description {
+    width: 40%;
+}
+
+.movie-details__select {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.movie-details__release-date {
+    border: none;
+    height: 115px;
+    background: #3686ff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    left: -20px;
+}
+
+.movie-details__synopsis {
+
+}

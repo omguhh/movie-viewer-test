@@ -1,0 +1,20 @@
+.navbar__wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.navbar__item {
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+.navbar__item a {
+    color: #000000;
+}
+
+.navbar__item:hover a {
+    color: #3586ff;
+}

@@ -1,0 +1,21 @@
+.ratings {
+
+}
+
+.ratings__wrapper {
+    padding: 20px 0;
+}
+
+.ratings__star {
+    color: #ffb82a;
+    margin: 0 5px;
+}
+
+.ratings__star:first-child {
+    margin-left: 0;
+}
+
+.ratings__number {
+    color: #ffb82a;
+    font-weight: bold;
+}

@@ -1,0 +1,32 @@
+.cast-list__wrapper {
+    margin: 10px auto;
+}
+.cast-list__item {
+    display: inline-block;
+    width: 55px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.cast-list__item:first-child  {
+    margin-left: 0;
+}
+.cast-list__item a {
+    color: #ffffff;
+}
+
+.cast-list__item:hover {
+
+}
+
+.cast-list__item.cast-list__item--more {
+    padding: 15px 10px;
+    border-radius: 50%;
+    background-color: #3686ff;
+    font-weight: bold;
+}
+
+.cast-list__image {
+    border-radius: 50%;
+    /*box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);*/
+}
