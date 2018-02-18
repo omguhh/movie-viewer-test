@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+    .movie-details__select {
+        display: none;
+    }
+    .movie-details__release-date {
+        display: none;
+    }
+}

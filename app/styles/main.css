@@ -6,7 +6,9 @@
 @import url("./blocks/base/base.css");
 @import url("./blocks/typography/typography.css");
 @import url("./blocks/buttons/buttons.css");
+@import url("./blocks/buttons/buttons.responsive.css");
 @import url("./blocks/navbar/navbar.css");
+@import url("./blocks/navbar/navbar.responsive.css");
 @import url("./blocks/slider/slider.css");
 @import url("./blocks/utils/utils.css");
 
@@ -15,6 +17,7 @@
 */
 
 @import url("./blocks/movie-details/movie-details.css");
+@import url("./blocks/movie-details/movie-details.responsive.css");
 @import url("./blocks/cast-list/cast-list.css");
 @import url("./blocks/ratings/ratings.css");
 @import url("./blocks/dropdown/dropdown.css");
