@@ -3,9 +3,10 @@
 }
 .cast-list__item {
     display: inline-block;
-    width: 55px;
-    margin: 0 10px;
-    vertical-align: middle;
+    width: 80px;
+    margin: 0 5px;
+    vertical-align: top;
+    text-align: center;
 }
 
 .cast-list__item:first-child  {
@@ -19,14 +20,84 @@
 
 }
 
+.cast-list__caption {
+    font-size: 0.65rem;
+}
+
 .cast-list__item.cast-list__item--more {
     padding: 15px 10px;
     border-radius: 50%;
     background-color: #3686ff;
     font-weight: bold;
+    width: 55px;
 }
 
 .cast-list__image {
     border-radius: 50%;
-    /*box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);*/
+    width: 55px;
+    height:55px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.4s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* front pane, placed above back */
+.front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
 }
