@@ -9,7 +9,7 @@
 }
 
 .movie-details__poster-section {
-    width: 32%;
+    width: 40%;
 }
 
 .movie-details__poster-section, .movie-details__description ,.movie-details__select {
@@ -19,9 +19,6 @@
     position: relative;
 }
 
-.movie-details__cast {
-
-}
 
 .movie-details__title {
     display: flex;
@@ -34,31 +31,20 @@
 }
 
 .movie-details__description {
-    width: 40%;
-}
-
-.movie-details__select {
-    width: 15%;
-    display: flex;
-    align-items: center;
-}
-
-.movie-details__release-date {
-    border: none;
-    height: 115px;
-    background: #3686ff;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .025em;
-    color: #ffffff;
-    padding: 10px;
-    position: absolute;
-    top: 15px;
-    text-align: center;
-    left: -20px;
+    width: 50%;
 }
 
 .movie-details__synopsis {
 
+}
+
+.movie-details__trailer {
+    padding: 15px 0;
+    border: 1px solid #e8e8e8;
+    border-right: 0;
+    border-left: 0;
+}
+
+.movie-details__trailer a {
+    color: #3686ff;
 }
