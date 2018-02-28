@@ -9,6 +9,10 @@
 
         apiService: apiService,
 
+        elements: {
+
+        },
+
         //hardcoded
         config: {
             url: 'http://www.omdbapi.com/?t=the+secret+life+of+pets&plot=full&apikey=65403495'
@@ -16,6 +20,7 @@
 
 
         setEvents: function() {
+            window.addEventListener("scroll", this.handleScroll.bind(this));
             this.showMovieDetails.bind(this);
         },
 
@@ -64,6 +69,18 @@
 
             return rendered;
 
+        },
+
+        handleScroll: function () {
+
+            var menu = document.querySelectorAll('.mobile-only.movie-details__nav')[0];
+
+            if (window.scrollY > 60) {
+                menu.classList.add('fixed');
+            }
+            else {
+                menu.classList.remove('fixed');
+            }
         }
 
     };
