@@ -5,4 +5,32 @@
     .movie-details__release-date {
         display: none;
     }
+    .movie-details__poster-section--desktop {
+        display: none;
+    }
+    .movie-details__description {
+        width: 100%;
+    }
+
+    .movie-details__wrapper {
+        padding: 0;
+    }
+    .movie-details__header {
+        background-color: #3686ff;
+        padding: 10px 10px;
+    }
+    .movie-details__title {
+        color: #ffffff;
+        font-size: 0.94rem;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .movie-details__share {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .movie-details__genre {
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
 }

@@ -6,6 +6,7 @@
 }
 .dropdown__wrapper  li {
     line-height: normal;
+    white-space: normal;
 }
 .dropdown__wrapper li:hover {
     cursor: pointer;

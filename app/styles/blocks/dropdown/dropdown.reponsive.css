@@ -1,0 +1,9 @@
+
+
+
+@media (max-width: 768px) {
+    .dropdown__items {
+        width: 47%;
+        top: 32px;
+    }
+}

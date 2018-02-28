@@ -16,3 +16,9 @@ body {
     max-width: 1166px;
     margin: 30px auto 0 auto;
 }
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+}

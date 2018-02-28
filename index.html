@@ -18,24 +18,33 @@
     </main>
     <!-- Movie details section -->
     <section class="movie-details__wrapper">
-        <div class="movie-details__poster-section">
+        <div class="movie-details__poster-section movie-details__poster-section--desktop">
             <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjIzMzA1OTkzNV5BMl5BanBnXkFtZTgwODE3MjM4NzE@._V1_SX500.jpg">
         </div>
         <div class="movie-details__description">
-            <div class="movie-details__title">
-                <h1>The Secret Life of Pets</h1>
-                <ul class="dropdown__wrapper">
-                    <li>
-                        <i class="fas fa-ellipsis-v movie-details__share"></i>
-                        <ul class="dropdown__items">
-                            <li class="dropdown__item"> <i class="fas fa-share-alt"></i> Share With Friends </li>
-                            <li class="dropdown__item"> <i class="fas fa-comments"></i> Send Feedback </li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="movie-details__header">
+                <div class="movie-details__header-actions">
+                    <h1 class="movie-details__title"> The Secret Life of Pets </h1>
+                    <ul class="dropdown__wrapper">
+                        <li>
+                            <i class="fas fa-ellipsis-v movie-details__share"></i>
+                            <ul class="dropdown__items">
+                                <li class="dropdown__item"> <i class="fas fa-share-alt"></i> Share With Friends </li>
+                                <li class="dropdown__item"> <i class="fas fa-comments"></i> Send Feedback </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <small class="movie-details__genre"> Animation, Adventure, Comedy/ 2016 / 1h59m </small>
             </div>
-            <small> Animation, Adventure, Comedy/ 2016 / 1h59m </small>
-            <div class="ratings__wrapper">
+            <ul class="mobile-only movie-details__nav">
+                <li class="movie-details__nav__item movie-details__nav__item--active">Overview</li>
+                <li class="movie-details__nav__item">Cast</li>
+                <li class="movie-details__nav__item">Trailers & Clips</li>
+                <li class="movie-details__nav__item">Reviews</li>
+                <li class="movie-details__nav__item">Similar Movies</li>
+            </ul>
+            <div class="ratings__wrapper desktop-only">
                 <i class="fas fa-star ratings__star"></i>
                 <i class="fas fa-star ratings__star"></i>
                 <i class="fas fa-star ratings__star"></i>
