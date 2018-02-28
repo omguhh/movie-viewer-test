@@ -1,0 +1,42 @@
+.actor-details {
+
+}
+
+.actor-details__description {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.actor-details__description p {
+    margin-top: 0.5rem;
+}
+
+.actor-details__image__wrapper {
+    width: 360px;
+    height: 202px;
+}
+.actor-details__image {
+    margin-right: -5px;
+    width: 360px;
+    height: 202px;
+}
+
+.actor-details__image:first-child {
+    width: 152px;
+}
+
+.actor-details__name h3 {
+    color: #ffffff;
+    margin:0;
+    text-transform: capitalize;
+}
+
+.actor-details__name p {
+    margin:0;
+}
+
+.actor-details__name {
+    background: #2569d0;
+    color: #ffffff;
+    padding: 10px 10px;
+}

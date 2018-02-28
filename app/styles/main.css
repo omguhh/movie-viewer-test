@@ -19,6 +19,7 @@
 
 @import url("./blocks/movie-details/movie-details.css");
 @import url("./blocks/movie-details/movie-details.responsive.css");
+@import url("./blocks/actor-details/actor-details.css");
 @import url("./blocks/cast-list/cast-list.css");
 @import url("./blocks/ratings/ratings.css");
 @import url("./blocks/dropdown/dropdown.css");
