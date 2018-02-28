@@ -58,11 +58,6 @@
     background: #2569d0;
     color: #ffffff;
     padding: 10px;
-    overflow: hidden;
-
-    white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .movie-details__nav__item {
@@ -77,4 +72,27 @@
 
 .movie-details__nav__item--active {
     font-weight: bold;
+}
+
+.movie-details__ratings {
+    width: 100%;
+    line-height: normal;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}
+
+.movie-details__ratings p {
+    margin: 0;
+}
+
+.movie-details__ratings:last-child {
+    border-left: 1px solid #e8e8e8;
+}
+
+.movie-details__ratings__wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
 }

@@ -1,3 +1,9 @@
+.enable-scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
 .desktop-only {
     display: block;
 }
