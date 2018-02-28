@@ -9,12 +9,6 @@
 
         apiService: apiService,
 
-        // elements: {
-        //     submitButton: $('.js-submit'),
-        //     event: $('.event'),
-        //     errorIcon: $('.js-error-icon')
-        // },
-
         //hardcoded
         config: {
             url: 'http://www.omdbapi.com/?t=the+secret+life+of+pets&plot=full&apikey=65403495'
@@ -32,9 +26,9 @@
 
         showMovieDetails: function () {
             var template = document.querySelectorAll('#movieDetails')[0].text;
+            var movieContainer =  document.querySelectorAll('#movieDetailsContainer')[0];
 
             var movieData = this.apiService.retrieveMovie(this.config.url,function(data) {
-                console.log(data);
                 var renderedTemplate = detailsController.parseTemplate(
                     template,
                     {
@@ -49,7 +43,7 @@
                     }
                 );
 
-                document.querySelectorAll('#movieDetailsContainer')[0].insertAdjacentHTML('afterbegin', renderedTemplate);
+                movieContainer.insertAdjacentHTML('afterbegin', renderedTemplate);
 
             });
         },
