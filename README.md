@@ -16,5 +16,5 @@ App features:
 - ~~Animations: active tab switching animation, cast list to cast details page loading animation~~
 - ~~For cast details page, you can display static information (doesn't have to load the data from the omdb api)~~
 
-Note: this isn't as perfect as I would've liked, the animations aren't exactly the smoothest things and there's some gotchas/bugs around, but theyre quite minor and have the overall functionality. This web app has 2 views, desktop/mobile. The mobile version behaves a bit more like the google gif, the desktop version is my own layout and doesn't have the cast overview section..but has a cast popup for more details about them. 
-Can view it here: 
+Note: this isn't as beautiful as I would've liked, the animations aren't exactly the smoothest things and there's some gotchas/bugs around, but theyre quite minor and have the overall functionality. This web app has 2 views, desktop/mobile. The mobile version behaves a bit more like the google gif, the desktop version is my own layout and doesn't have the cast overview section..but has a cast popup for more details about them. 
+Can view it here: http://yasminefadel.com/movie-viewer-test/
