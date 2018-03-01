@@ -12,6 +12,7 @@
 @import url("./blocks/slider/slider.css");
 @import url("./blocks/slider/slider.responsive.css");
 @import url("./blocks/utils/utils.css");
+@import url("./blocks/animations/animations.css");
 
 /*
  Component-specific styling

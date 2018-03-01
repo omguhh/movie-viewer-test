@@ -60,6 +60,10 @@
     padding: 10px;
 }
 
+.movie-details__nav a {
+    color: #ffffff;
+}
+
 .movie-details__nav__item {
     font-size: 0.8rem;
     display: inline-block;

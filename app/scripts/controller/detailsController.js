@@ -110,11 +110,13 @@
         togglePageState: function (pageTarget,linkElement) {
             var pages = document.querySelectorAll('[data-active]');
             var targetElement = document.getElementById(pageTarget);
-            var movieDetailsHeader = document.getElementById("moviePageHeader");
+            var currentlyActiveElement = document.querySelectorAll('[data-active=true]')[0];
+            currentlyActiveElement.classList.add("animated", "fadeOutLeft");
             pages.forEach(function(element) {
-                element.style.display = 'none';
                 element.classList.remove('movie-details__nav__item--active');
                 targetElement.setAttribute("data-active", "false");
+                currentlyActiveElement.classList.remove("animated", "fadeOutRight","fadeInRight","fadeOutLeft");
+                element.style.display = 'none';
             });
             var links = document.querySelectorAll('[data-target]');
             links.forEach(function(link) {
@@ -123,8 +125,10 @@
 
             this.shouldHideHeader(pageTarget);
 
-            targetElement.style.display = 'block';
             targetElement.setAttribute("data-active", "true");
+            targetElement.classList.add("animated", "fadeInLeft");
+            targetElement.style.display = 'block';
+
             linkElement.parentNode.classList.add('movie-details__nav__item--active');
         },
 
