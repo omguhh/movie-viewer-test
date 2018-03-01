@@ -35,30 +35,32 @@
             <li class="cast-list__item"><img class="cast-list__image" src="app/images/louis.jpg"><small class="cast-list__caption"> Louis C.K </small></li>
         </ul>
     </section>
-    <section class="actor-details" data-active="false" id="cast-details">
-        <ul class="mobile-only movie-details__nav">
-            <li class="movie-details__nav__item"> <a href="#" id="resetToHome" data-target="overview"> <i class="fas fa-angle-left"></i> </a> </li>
-            <li class="movie-details__nav__item movie-details__nav__item--active">Overview </li>
-            <li class="movie-details__nav__item"> Movies  </li>
-            <li class="movie-details__nav__item"> TV Shows  </li>
-        </ul>
-        <div class="enable-scroll">
-            <img src="./app/images/jenny-slate.jpg" class="actor-details__image">
-            <img src="./app/images/jenny-slate-2.jpg" class="actor-details__image">
-        </div>
-            <div class="actor-details__name">
-            <h3>Jenny Slate</h3>
-            <p>American comedian</p>
-        </div>
-        <div class="actor-details__description">
-            <p>Jenny Sarah Slate is an American stand-up comedian, actress, voice actress and author, best known for role as Donna Stern in Obvious Child, as well as being the co-creator of the Marcel the Shell..</p>
-            <p>Born: March 25, 1982 (age 35),<a href="#">Massachusetts,United States</a></p>
-            <p>Spouse: <a href="#">Dean Fleische(2012-2016)</a></p>
-            <p>TV shows: <a href="#">Big Mouth</a>,<a href="#">Star vs. the Forces of Evil</a>,<a href="#">Bored to Death</a>,<a href="#">Married Adventure Time, More.</a></p>
-            <p>Upcoming movie: <a href="#"> Venom </a></p>
-            <p>Books:<a href="#"> Marcel the Shell </a>,<a href="#">The Most Surprised I've Ever Been</a></p>
-        </div>
-    </section>
+    <div class="modal-window">
+        <section class="actor-details" data-active="false" id="cast-details">
+            <ul class="movie-details__nav">
+                <li class="movie-details__nav__item"> <a href="#" id="resetToHome" data-target="overview"> <i class="fas fa-angle-left mobile-only"></i>  <i class="fas fa-times desktop-only"></i></a> </li>
+                <li class="movie-details__nav__item movie-details__nav__item--active">Overview </li>
+                <li class="movie-details__nav__item"> Movies  </li>
+                <li class="movie-details__nav__item"> TV Shows  </li>
+            </ul>
+            <div class="enable-scroll">
+                <img src="./app/images/jenny-slate.jpg" class="actor-details__image">
+                <img src="./app/images/jenny-slate-2.jpg" class="actor-details__image">
+            </div>
+                <div class="actor-details__name">
+                <h3>Jenny Slate</h3>
+                <p>American comedian</p>
+            </div>
+            <div class="actor-details__description">
+                <p>Jenny Sarah Slate is an American stand-up comedian, actress, voice actress and author, best known for role as Donna Stern in Obvious Child, as well as being the co-creator of the Marcel the Shell..</p>
+                <p>Born: March 25, 1982 (age 35),<a href="#">Massachusetts,United States</a></p>
+                <p>Spouse: <a href="#">Dean Fleische(2012-2016)</a></p>
+                <p>TV shows: <a href="#">Big Mouth</a>,<a href="#">Star vs. the Forces of Evil</a>,<a href="#">Bored to Death</a>,<a href="#">Married Adventure Time, More.</a></p>
+                <p>Upcoming movie: <a href="#"> Venom </a></p>
+                <p>Books:<a href="#"> Marcel the Shell </a>,<a href="#">The Most Surprised I've Ever Been</a></p>
+            </div>
+        </section>
+    </div>
 </div>
 
 <!-- Templating :) -->

@@ -95,12 +95,21 @@
             event.preventDefault();
             var eventTarget = event.target.getAttribute("data-target");
             var linkElement = event.target;
-            this.togglePageState(eventTarget,linkElement);
+
+            var screenSize = window.matchMedia("(min-width: 768px)");
+
+            if (screenSize.matches) {
+                this.showModal();
+            } else {
+                this.togglePageState(eventTarget,linkElement);
+            }
         },
 
         resetTransitionState:function () {
             var overviewPage = document.getElementById("overview");
             var inactivePages = document.querySelectorAll('[data-active]');
+            var modal = document.getElementsByClassName("modal-window")[0];
+
             inactivePages.forEach(function(element) {
                 element.style.display = 'none';
                 element.setAttribute("data-active", "false");
@@ -108,6 +117,8 @@
             this.shouldHideHeader("overview");
             overviewPage.style.display = 'block';
             overviewPage.setAttribute("data-active", "true");
+
+            modal.style.opacity = 0;
         },
         
         togglePageState: function (pageTarget,linkElement) {
@@ -142,6 +153,13 @@
             } else {
                 movieDetailsHeader.style.display = 'block';
             }
+        },
+
+        showModal:function () {
+            var modal = document.getElementsByClassName("modal-window")[0];
+            var actorsDetailPage = document.getElementById("cast-details");
+            modal.style.opacity = 1;
+            actorsDetailPage.style.display = 'block';
         }
 
     };
