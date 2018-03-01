@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
     .modal-window {
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.39);
+        /*background-color: rgba(0, 0, 0, 0.39);*/
         top: 0;
         right: 0;
         bottom: 0;

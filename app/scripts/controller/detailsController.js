@@ -118,7 +118,6 @@
             overviewPage.style.display = 'block';
             overviewPage.setAttribute("data-active", "true");
 
-            modal.style.opacity = 0;
         },
         
         togglePageState: function (pageTarget,linkElement) {
