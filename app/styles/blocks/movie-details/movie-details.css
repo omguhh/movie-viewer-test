@@ -77,6 +77,10 @@
     font-weight: bold;
 }
 
+.movie-details__stills h3 {
+    margin-top: 0;
+}
+
 .movie-details__ratings {
     width: 100%;
     line-height: normal;

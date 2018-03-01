@@ -33,7 +33,7 @@
         font-size: 0.8rem;
         color: #ffffff;
     }
-    .movie-details__synopsis, .movie-details__cast , .movie-details__stills {
+    .movie-details__synopsis, .movie-details__cast  {
         padding: 5px 10px;
     }
 
@@ -47,5 +47,8 @@
         white-space: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+    }
+    .movie-details__stills {
+        padding: 0;
     }
 }

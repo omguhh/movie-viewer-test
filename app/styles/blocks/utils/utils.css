@@ -5,20 +5,20 @@
     -webkit-overflow-scrolling: touch;
 }
 .desktop-only {
-    display: block;
+    display: block !important;
 }
 
 .mobile-only {
-    display: none;
+    display: none  !important;
 }
 
 @media (max-width: 768px) {
     .desktop-only {
-        display: none;
+        display: none  !important;
     }
 
     .mobile-only {
-        display: block;
+        display: block  !important;
     }
 }
 

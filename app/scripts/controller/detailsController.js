@@ -49,7 +49,10 @@
                         rottenTomatoesRating: data.Ratings[1].Value,
                         releaseYear: data.Year,
                         genre: data.Genre,
-                        runtime: data.Runtime
+                        runtime: data.Runtime,
+                        boxOffice:data.BoxOffice,
+                        directors:data.Director,
+                        initialRelease:data.Released
                     }
                 );
 

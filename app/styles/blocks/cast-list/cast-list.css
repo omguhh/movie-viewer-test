@@ -22,6 +22,7 @@
 
 .cast-list__caption {
     font-size: 0.65rem;
+    color: #a9a9ae;
 }
 
 .cast-list__item.cast-list__item--more {
@@ -56,6 +57,13 @@
     border-radius: 0;
 }
 
-.cast-list--page .cast-list__caption {
+.cast-list--page .flip-container {
+    width: 100%;
+    height: 107px;
+}
 
+@media (max-width: 768px) {
+    .cast-list__item.cast-list__item--more.mobile-only {
+        display: inline-block !important;
+    }
 }
