@@ -7,7 +7,8 @@
 
             var request = new XMLHttpRequest();
 
-            request.open('GET', config, true);
+            //synchronous because we need the template to be ready to attach events, promises would have been nice here :(
+            request.open('GET', config, false);
 
             request.onload = function() {
                 if (request.status >= 200 && request.status < 400) {

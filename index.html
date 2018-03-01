@@ -17,8 +17,12 @@
         <nav class="navbar__item"> <a href="#"> Watch List  </a> </nav>
     </main>
     <!-- Movie details section -->
-    <section class="movie-details__wrapper" id="movieDetailsContainer"></section>
-    <section class="cast-list cast-list--page mobile-only">
+    <section class="movie-details__wrapper" id="movieDetailsContainer">
+
+
+
+    </section>
+    <section class="cast-list cast-list--page mobile-only" data-active="false" id="cast">
         <ul class="cast-list__wrapper">
             <li class="cast-list__item"><img class="cast-list__image" src="app/images/eric.jpg"><small class="cast-list__caption"> Eric Stonestreet </small></li>
             <li class="cast-list__item"><img class="cast-list__image" src="app/images/jenny.jpg"><small class="cast-list__caption"> Jenny Slate </small></li>
@@ -31,13 +35,18 @@
             <li class="cast-list__item"><img class="cast-list__image" src="app/images/eric.jpg"><small class="cast-list__caption"> Eric Stonestreet </small></li>
         </ul>
     </section>
-    <section class="cast-list cast-list--details mobile-only">
-        <div class="actor-details enable-scroll mobile-only">
+    <section class="actor-details mobile-only" data-active="false" id="cast-details">
+        <ul class="mobile-only movie-details__nav">
+            <li class="movie-details__nav__item"> <a href="#" id="resetToHome" data-target="overview"> <i class="fas fa-angle-left"></i> </a> </li>
+            <li class="movie-details__nav__item movie-details__nav__item--active">Overview </li>
+            <li class="movie-details__nav__item"> Movies  </li>
+            <li class="movie-details__nav__item"> TV Shows  </li>
+        </ul>
+        <div class="enable-scroll">
             <img src="./app/images/jenny-slate.jpg" class="actor-details__image">
             <img src="./app/images/jenny-slate-2.jpg" class="actor-details__image">
-            <img src="https://s3.amazonaws.com/assets.forward.com/images/cropped/gettyimages-813614454-1500578777.jpg" class="actor-details__image">
         </div>
-        <div class="actor-details__name">
+            <div class="actor-details__name">
             <h3>Jenny Slate</h3>
             <p>American comedian</p>
         </div>
@@ -59,74 +68,78 @@
         <img src={poster}>
     </div>
     <div class="movie-details__description">
-        <div class="movie-details__header">
-            <div class="movie-details__header-actions">
-                <h1 class="movie-details__title"> {movieTitle} </h1>
-                <ul class="dropdown__wrapper">
-                    <li>
-                        <i class="fas fa-ellipsis-v movie-details__share"></i>
-                        <ul class="dropdown__items">
-                            <li class="dropdown__item"> <i class="fas fa-share-alt"></i> Share With Friends </li>
-                            <li class="dropdown__item"> <i class="fas fa-comments"></i> Send Feedback </li>
-                        </ul>
-                    </li>
-                </ul>
+        <div id="moviePageHeader">
+            <div class="movie-details__header">
+                <div class="movie-details__header-actions">
+                    <h1 class="movie-details__title"> {movieTitle} </h1>
+                    <ul class="dropdown__wrapper">
+                        <li>
+                            <i class="fas fa-ellipsis-v movie-details__share"></i>
+                            <ul class="dropdown__items">
+                                <li class="dropdown__item"> <i class="fas fa-share-alt"></i> Share With Friends </li>
+                                <li class="dropdown__item"> <i class="fas fa-comments"></i> Send Feedback </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <small class="movie-details__genre"> {genre} / {releaseYear} / {runtime} </small>
             </div>
-            <small class="movie-details__genre"> {genre} / {releaseYear} / {runtime} </small>
+            <ul class="mobile-only movie-details__nav">
+                <li class="movie-details__nav__item movie-details__nav__item--active"><a href="#" id="overviewLink" data-target="overview" class="transitionLink"> Overview </a></li>
+                <li class="movie-details__nav__item"><a href="#" class="transitionLink" data-target="cast" > Cast </a> </li>
+            </ul>
         </div>
-        <ul class="mobile-only movie-details__nav">
-            <li class="movie-details__nav__item movie-details__nav__item--active">Overview</li>
-            <li class="movie-details__nav__item">Cast</li>
-        </ul>
-        <div class="ratings__wrapper desktop-only">
-            <i class="fas fa-star ratings__star"></i>
-            <i class="fas fa-star ratings__star"></i>
-            <i class="fas fa-star ratings__star"></i>
-            <i class="fas fa-star ratings__star"></i>
-            <i class="far fa-star ratings__star"></i>
-            <small class="ratings__number">{imdbRating}</small>
-        </div>
-        <div class="movie-details__stills enable-scroll mobile-only">
-            <div class="slider" data-items="3">
-                <iframe width="200" height="140" src="https://www.youtube.com/embed/i-80SGWfEjM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <img src="./app/images/easter_th-600x337.jpg" class="slider__item">
-                <img src="./app/images/the-secret-life-of-pets.jpg" class="slider__item">
+        <div id="overview" data-active="true">
+            <div class="ratings__wrapper desktop-only">
+                <i class="fas fa-star ratings__star"></i>
+                <i class="fas fa-star ratings__star"></i>
+                <i class="fas fa-star ratings__star"></i>
+                <i class="fas fa-star ratings__star"></i>
+                <i class="far fa-star ratings__star"></i>
+                <small class="ratings__number">{imdbRating}</small>
             </div>
-        </div>
-        <div class="movie-details__trailer desktop-only">
-            <a href="https://www.youtube.com/watch?v=i-80SGWfEjM" target="_blank"> <i class="fab fa-youtube"></i> Play trailer on Youtube </a>
-        </div>
-        <div class="movie-details__ratings__wrapper mobile-only">
-            <div class="movie-details__ratings">
-                <p> {imdbRating} </p>
-                <a href="#"> IMDb </a>
+            <div class="movie-details__stills enable-scroll mobile-only">
+                <div class="slider" data-items="3">
+                    <iframe width="200" height="140" src="https://www.youtube.com/embed/i-80SGWfEjM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <img src="./app/images/easter_th-600x337.jpg" class="slider__item">
+                    <img src="./app/images/the-secret-life-of-pets.jpg" class="slider__item">
+                </div>
             </div>
-            <div class="movie-details__ratings">
-                <p> {rottenTomatoesRating} </p>
-                <a href="#"> Rotten Tomatoes </a>
+            <div class="movie-details__trailer desktop-only">
+                <a href="https://www.youtube.com/watch?v=i-80SGWfEjM" target="_blank"> <i class="fab fa-youtube"></i> Play trailer on Youtube </a>
             </div>
-        </div>
-        <div class="movie-details__synopsis">
-            <h3 class="desktop-only">Synopsis</h3>
-            <p> {synopsis} </p>
-        </div>
-        <div class="movie-details__cast">
-            <h3>The Cast</h3>
-            <div class="movie-details__cast-items">
-                <ul class="cast-list__wrapper">
-                    <li class="cast-list__item"><div class="flip-container"><div class="flipper"><div class="front"><img class="cast-list__image" src="app/images/eric.jpg"> </div><div class="back"> <img class="cast-list__image" src="https://vignette.wikia.nocookie.net/p__/images/2/2f/Duke_the_secret_life_of_pets.png/revision/latest?cb=20160810092151&path-prefix=protagonist"> </div></div></div><small class="cast-list__caption"> Eric Stonestreet </small></li>
-                    <li class="cast-list__item"><div class="flip-container"><div class="flipper"><div class="front"><img class="cast-list__image" src="app/images/jenny.jpg"> </div><div class="back"> <img class="cast-list__image" src="https://vignette.wikia.nocookie.net/parody/images/3/3b/Gidget_the_secret_life_of_pets.png/revision/latest?cb=20160816200218"> </div></div></div><small class="cast-list__caption"> Jenny Slate </small></li>
-                    <li class="cast-list__item"><div class="flip-container"><div class="flipper"><div class="front"><img class="cast-list__image" src="app/images/kevin-hart.jpg"> </div><div class="back"> <img class="cast-list__image" src="https://vignette.wikia.nocookie.net/secretlifeofpets/images/3/3a/Snowball_carrot.jpg/revision/latest?cb=20161206112843"> </div></div></div><small class="cast-list__caption"> Kevin Heart </small></li>
-                    <li class="cast-list__item"><div class="flip-container"><div class="flipper"><div class="front"><img class="cast-list__image" src="app/images/louis.jpg"> </div><div class="back"> <img class="cast-list__image" src="https://vignette.wikia.nocookie.net/secretlifeofpets/images/1/1c/Happy_max.png/revision/latest?cb=20170123125916"> </div></div></div><small class="cast-list__caption"> Louis C.K </small></li>
-                    <li class="cast-list__item cast-list__item--more"> <a href="#"> +28 </a> </li>
-                </ul>
+            <div class="movie-details__ratings__wrapper mobile-only">
+                <div class="movie-details__ratings">
+                    <p> {imdbRating} </p>
+                    <a href="#"> IMDb </a>
+                </div>
+                <div class="movie-details__ratings">
+                    <p> {rottenTomatoesRating} </p>
+                    <a href="#"> Rotten Tomatoes </a>
+                </div>
             </div>
-        </div>
-        <div class="movie-details__stills desktop-only">
-            <h3>Movie Stills</h3>
-            <div class="slider" data-items="3">
-                <img src="./app/images/easter_th-600x337.jpg" class="slider__item">
-                <img src="./app/images/the-secret-life-of-pets.jpg" class="slider__item">
+            <div class="movie-details__synopsis">
+                <h3 class="desktop-only">Synopsis</h3>
+                <p> {synopsis} </p>
+            </div>
+            <div class="movie-details__cast">
+                <h3>The Cast</h3>
+                <div class="movie-details__cast-items">
+                    <ul class="cast-list__wrapper">
+                        <li class="cast-list__item"><a href="#" class="transitionLink" data-target="cast-details"> Eric Stonestreet </a></li>
+                        <li class="cast-list__item"><div class="flip-container"><div class="flipper"><div class="front"><img class="cast-list__image" src="app/images/jenny.jpg"> </div><div class="back"> <img class="cast-list__image" src="https://vignette.wikia.nocookie.net/parody/images/3/3b/Gidget_the_secret_life_of_pets.png/revision/latest?cb=20160816200218"> </div></div></div><small class="cast-list__caption"> Jenny Slate </small></li>
+                        <li class="cast-list__item"><div class="flip-container"><div class="flipper"><div class="front"><img class="cast-list__image" src="app/images/kevin-hart.jpg"> </div><div class="back"> <img class="cast-list__image" src="https://vignette.wikia.nocookie.net/secretlifeofpets/images/3/3a/Snowball_carrot.jpg/revision/latest?cb=20161206112843"> </div></div></div><small class="cast-list__caption"> Kevin Heart </small></li>
+                        <li class="cast-list__item"><div class="flip-container"><div class="flipper"><div class="front"><img class="cast-list__image" src="app/images/louis.jpg"> </div><div class="back"> <img class="cast-list__image" src="https://vignette.wikia.nocookie.net/secretlifeofpets/images/1/1c/Happy_max.png/revision/latest?cb=20170123125916"> </div></div></div><small class="cast-list__caption"> Louis C.K </small></li>
+                        <li class="cast-list__item cast-list__item--more"> <a href="#" class="transitionLink" data-target="cast"> +28 </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="movie-details__stills desktop-only">
+                <h3>Movie Stills</h3>
+                <div class="slider" data-items="3">
+                    <img src="./app/images/easter_th-600x337.jpg" class="slider__item">
+                    <img src="./app/images/the-secret-life-of-pets.jpg" class="slider__item">
+                </div>
             </div>
         </div>
     </div>
