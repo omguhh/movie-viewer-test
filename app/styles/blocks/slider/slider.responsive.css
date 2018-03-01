@@ -1,5 +1,15 @@
 @media (max-width: 768px) {
     .slider {
         margin-top: 0;
+        overflow-x: scroll;
+        height: auto;
     }
+    .slider__item {
+        float: none;
+        width: 250px;
+        padding: 0;
+        height: 140px;
+        margin-right: -5px;
+    }
+
 }
